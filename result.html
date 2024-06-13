@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>document.write(Date());</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Results</title>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<link rel="stylesheet"  href="css/common.css" >
+<script src="js/common.js"></script>
+<link rel="C:common.css">
+
+<div class="voice">
+<a href="home.html">
+  <input type="image" src="images/voice.png" name="voice" width="100" height="100" alt="voice"/>
+</div>
+<div class="log">
+<a href="user.html">
+  <input type="image" src="images/Log.png" name="log" width="60" height="60" alt="log"/>
+
+ 
+</a>
+</div>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="vote.html">Vote</a>
+  <a href="result.html">Results</a>
+  <a href="about us.php">About us</a>
+  <a href="contact us.php">Contact us</a>
+  <a href="FAQ.html">FAQ</a>
+  
+</div>
+
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+
+<div class="btn-group">
+  <button onclick="window.location.href='home.html'">Home</button>
+  <button onclick="window.location.href='vote.html'">Vote</button>
+  <button onclick="window.location.href='about us.php'">About Us</button>
+  <button onclick="window.location.href='contactus.php'">Contact Us</button>
+  <button onclick="window.location.href='FAQ.html'">FAQ</button>
+  <button onclick="window.location.href='log.html'">LOG OUT</button>
+</div>
+
+
+ <script src="js/results.js"></script>
+
+</head>
+<body>
+<center>
+<div class="productData tbl"style="border-style: groove; border-color:DarkBlue">
+<center>
+<h2><b>Results</b></h2>
+</center>
+<h3>Candidate</h3>
+<form>
+  <input type="search" name="search" placeholder="Candidate ID...">
+  <button type="submit">Search</button>
+</form>
+
+  <button onclick="calculateVotes()">Calculate Results</button>
+
+<div id="results">
+  <h4>Candidate's votes</h4>
+  <p id="option1Result"></p>
+<div id="imageContainer"></div>
+  <p id="option2Result"></p>
+<div id="imageContainer"></div>
+  <p id="option3Result"></p>
+<div id="imageContainer"></div>
+  <p id="option4Result"></p>
+<div id="imageContainer"></div>
+  <p id="option5Result"></p>
+<div id="imageContainer"></div>
+</div>
+<div>
+  <h4>Candidate Information</h4>
+ <p>candidate 1</p>
+  <img src="images/candidate1.jpg" height="30" alt="Candidate Photo">
+<p>candidate 2</p>
+  <img src="images/candidate2.jpg" height="30" alt="Candidate Photo">
+<p>candidate 3</p>
+  <img src="images/candidate3.jpg" height="30" alt="Candidate Photo">
+<p>candidate 4</p>
+  <img src="images/candidate4.jpg" height="30" alt="Candidate Photo">
+<p>candidate 5</p>
+  <img src="images/candidate5.jpg" height="30" alt="Candidate Photo">
+ 
+</div>
+</div>
+</center>
+</body>
+<footer>
+        <div class="footer-content">
+            <h3>TUNE TITANS</h3>
+            <p>"Welcome to our online voting system for reality shows! Cast your vote and shape the 
+			outcome of your favorite contestants with just a few clicks. Join the excitement, influence
+			the competition, and be a part of the ultimate reality show experience. Make your voice heard 
+			and make a difference today!"</p>
+            <ul class="socials">
+                <li><a href=><img src="images/face.png" height="30"><i class="fa fa-facebook"></i></a></li>
+                <li><a href=><img src="images/twi.png" height="30"><i class="fa fa-twitter"></i></a></li>
+                <li><a href=><img src="images/google.png" height="50"><i class="fa fa-google"></i></a></li>
+                <li><a href=><img src="images/you.png" height="30"><i class="fa fa-youtube"></i></a></li>
+                <li><a href=><img src="images/inster.png" height="30"><i class="fa fa-instergram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">HS</a>  </p>
+            <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><a href="privacy policy.html">Privacy policy</a></li>
+                        <li><a href="about us.php">About</a></li>
+                        <li><a href="contactus.php">Contact</a></li>
+                        <li><a href="tc.html">Terms & Conditions</a></li>
+                      </ul>
+                    </div>
+        </div>
+
+    </footer>
+</html>

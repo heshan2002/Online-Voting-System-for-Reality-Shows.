@@ -1,0 +1,210 @@
+
+.contact{
+	position:relative;
+	min-height:100vh;
+	padding:50px 100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	background:#66B4D1;
+}
+.contact h2{
+	font-size:3em;
+	color:#fff;
+	font-weight:500;
+	text-align:center;
+}
+
+.container{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:30px;
+}
+.container .contactinfo{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+}
+.container .contactinfo .box{
+	position:relative;
+	padding:20px 0;
+	display:flex;
+}
+.container .contactinfo .box .icon{
+	min-width:60px;
+	height:60px;
+	background:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:50%;
+	font-size:22px;
+}
+.container .contactinfo .box .text{
+	display:flex;
+	flex-direction:column;
+	margin-left:20px;
+	font-size:16px;
+	font-weight:300;
+	color:#fff;
+}
+.container .contactinfo .box .text h3{
+	font-weight:500;
+	color:#206B87;
+}
+
+.container .contactform{
+	position:relative;
+	width:60%;
+	background:url(cf2.jpg);
+	min-height:500px;
+	padding:60px;
+}
+.container .contactform h2{
+	font-size:2em;
+	font-weight:500;
+}
+.container .contactform .inputBox{
+	position:relative;
+	width:100%;
+	margin-top:20px;
+}
+.container .contactform .inputBox input,
+.container .contactform .inputBox textarea
+{
+	width:65%;
+	padding:5px 0;
+	font-size:16px;
+	margin:10px 0;
+	border:2px solid #333;
+	border-radius:4px;
+	box-sizing:border-box;
+	resize:none;
+}
+.container .contactform .inputBox label{
+	font-size:18px;
+	color:#fff
+}
+.container .contactform .inputBox input[type=submit]{
+	background-color:#2552DC;
+	color:white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.container .contactform .inputBox input[type=submit]:hover{
+	background-color: #7797FA;
+}
+.container .contactform img{
+	float:right
+	
+}
+
+.update-profile{
+	min-height:100vh;
+	background-color:var(--light-bg);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:20px;
+}
+.update-profile form{
+	padding:20px;
+	background-color:red;
+	box-shadow:var(--box-shadow);
+	text-align:center;
+	width:700px;
+	border-radius:5px;
+}
+.update-profile form .flex{
+	display:flex;
+	
+	justify-content:space-between;
+	margin-bottom:20px;
+	gap:15px;
+}
+@media(max-width:650px){
+	.update-profile form .flex{
+		flex:wrap;
+		gap:0;
+	}
+}
+.update-profile form .flex .inputBox{
+	width:49%;
+}
+.update-profile form .flex .inputBox span{
+	text-align:left;
+	display:block;
+	margin-top:15px;
+	font-size:17px;
+	color:var(--black);
+}
+.update-profile form .flex .inputBox .box{
+	width:100%;
+	border-radius:5px;
+	background-color:var(--light-bg);
+	padding:12px 14px;
+	font-size:17px;
+	color:var(--black);
+	margin-top:10px;
+}
+.update-profile form .inputBox input[type=submit]{
+	background-color:#2552DC;
+	color:white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.update-profile form .flex .inputBox .wrapper{
+	height: 300px;
+	width:300px;
+	position: relative;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	background: url('images/user.png');
+    background-size:100% 100;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.my_file{
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 120px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0,0,0,0.5);
+
+}
+.my_file::-webkit-file-upload-button{
+    visibility: hidden;
+
+}
+.my_file::before{
+    content: '/f030';
+    font-family:fontAwesome;
+    font-size: 50px;
+    color: #fff;
+    display: inline-block;
+    -webkit-user-select: none;
+}
+.my_file::after{
+    content: 'Update';
+    font-family: arial;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    top:70px;
+    font-size: 14px;
+    position: absolute;
+}

@@ -1,0 +1,61 @@
+body {
+	background-image: url("../background.jpg");
+	background-size: 1080px 1920px;
+}
+
+.logo{  
+	display: block;  
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	font-size: 40px; /*change the font-size by using id selector*/
+}
+h3#header{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 32px;
+}
+hr#test{
+	border: 1px solid black;
+}
+ul.menu{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;                     
+	overflow: hidden;
+	background-color: #333;
+}
+li.menu{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color:pink;
+}
+.productData {
+	background-color: mistyrose;
+	padding: 15px;
+	width:400px;
+	
+	top:100px;
+	
+}
+th.col1{
+	text-align: center;
+}
+th.col2{
+	text-align: left;
+}
+div.tbl{
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
